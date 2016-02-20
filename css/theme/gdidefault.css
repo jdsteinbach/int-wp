@@ -40,8 +40,40 @@ body {
   font-size: 36px;
   font-weight: 200;
   letter-spacing: -0.02em;
-  color: #eeeeee; }
+  color: #eeeeee;
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures, contextual;
+  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+  -ms-font-feature-settings: "kern", "liga", "clig", "alt";
+  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+  font-feature-settings: "kern", "liga", "clig", "calt"; }
 
+.reveal b,
+.reveal strong {
+  font-family: "Gotham-Bold", "Helvetica", Arial, sans-serif;
+}
+
+.reveal i,
+.reveal em {
+  font-family: "Gotham-Italic", "Helvetica", Arial, sans-serif;
+}
+
+.reveal li {
+  margin-bottom: .5em;
+}
+
+.reveal p {
+  margin: 0 auto 1em;
+  max-width: 18em;
+}
+
+.reveal section p img {
+  box-sizing: border-box;
+  display: block;
+  margin: .5em 0;
+  max-width: 100%;
+  height: auto;
+}
 ::selection {
   color: white;
   background: #f9b8bb;
@@ -66,6 +98,17 @@ body {
 
 .reveal h1 {
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); }
+
+.reveal .bold-code {
+  color: #fff;
+  font-weight: bold;
+  line-height: 2.5;
+  text-decoration: underline;
+}
+
+.reveal pre > code {
+  padding: .5em 1em;
+}
 
 /*********************************************
  * LINKS
@@ -171,6 +214,79 @@ body {
 }
 .reveal footer .copyright a img{
     vertical-align: middle;
+}
+
+
+.pizzazz {
+  -webkit-animation: pizzazz 3s ease-in-out infinite;
+  animation: pizzazz 3s ease-in-out infinite;
+  -webkit-transform-origin: center top;
+  transform-origin: center top;
+}
+
+@-webkit-keyframes pizzazz {
+  0%, 100% {
+    opacity: .75;
+    -webkit-transform: none;
+    transform: none;
+  }
+  85% {
+    opacity: 1;
+    -webkit-transform: scale(3);
+    transform: scale(3);
+  }
+}
+
+@keyframes pizzazz {
+  0%, 100% {
+    opacity: .75;
+    -webkit-transform: none;
+    transform: none;
+  }
+  85% {
+    opacity: 1;
+    -webkit-transform: scale(3);
+    transform: scale(3);
+  }
+}
+
+.anim-warning {
+  border: 3px solid white !important;
+  text-align: center;
+  -webkit-animation: anim-warning 1s ease-in-out infinite;
+  animation: anim-warning 1s ease-in-out infinite;
+}
+
+.anim-warning > * {
+  display: inline-block;
+  width: 98%;
+  vertical-align: middle;
+}
+
+.anim-warning::before {
+  display: inline-block;
+  content: '';
+  height: 600px;
+  width: 0;
+  vertical-align: middle;
+}
+
+@-webkit-keyframes anim-warning {
+  0%, 100% {
+    border-color: white;
+  }
+  25% {
+    border-color: rgba(255,255,255,0);
+  }
+}
+
+@keyframes anim-warning {
+  0%, 100% {
+    border-color: white;
+  }
+  25% {
+    border-color: rgba(255,255,255,0);
+  }
 }
 
 /*********************************************

@@ -1,405 +1,634 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
 
-		<title>girldevelopit-reveal.js - The GDI HTML Presentation Framework</title>
+    <title>girldevelopit-reveal.js - The GDI HTML Presentation Framework</title>
 
-		<meta name="description" content="Girl Develop It framework for easily creating beautiful presentations using HTML in GDI theme. Forked from Hakim El Hattab's reveal.js">
-		<meta name="author" content="Girl Develop It">
+    <meta name="description" content="Girl Develop It framework for easily creating beautiful presentations using HTML in GDI theme. Forked from Hakim El Hattab's reveal.js">
+    <meta name="author" content="Girl Develop It">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/gdidefault.css" id="theme">
 
-		<!-- For syntax highlighting -->
-		<!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
-		<!-- dark editor--><link rel="stylesheet" href="lib/css/dark.css">
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- For syntax highlighting -->
+    <!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
+    <!-- dark editor--><link rel="stylesheet" href="lib/css/dark.css">
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-		<script>
-			if( window.location.search.match( /print-pdf/gi ) ) {
-				var link = document.createElement( 'link' );
-				link.rel = 'stylesheet';
-				link.type = 'text/css';
-				link.href = 'css/print/pdf.css';
-				document.getElementsByTagName( 'head' )[0].appendChild( link );
-			}
-		</script>
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
 
-		<!-- If use the PDF print sheet so students can print slides-->
-		
-		<link rel="stylesheet" href="css/print/pdf.css" type="text/css" media="print">
+    <!-- If use the PDF print sheet so students can print slides-->
+
+    <link rel="stylesheet" href="css/print/pdf.css" type="text/css" media="print">
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
 
-	<body>
-
-		<div class="reveal">
-
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
+  <body>
+    <div class="reveal">
+      <div class="slides">
         <!-- Opening -->
-				<section>
-					<h1>GDI Reveal.js</h1>
-					<h3>Girl Develop It's Framework for HTML Presentations</h3>
-					<p>
-						<small>Found at <a href ="http://github.com/girldevelopit/reveal.js">Girl Develop It reveal.js fork</a>.</small>
-					</p>
-					<p>
-						<small>Original Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
-				</section>
-        <!-- Compatibility-->
-				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.</p>
-						
-						<p>We highly recommend using Chrome, currently, however, the latest version of Safari, mobile Safari (iPad), Firefox and IE9 will work.
-					</p>
-				</section>
-				
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
-				</section>
-				
-				<!-- Examples of basic html based slides -->
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-				
-				<!-- Examples of code slides-->
-				<section>
-					  <h2>But wait! We teach code</h2>
-					  <p>For HTML -- Surround your code with a div class "xml", then pre, then code.</p>
-           <pre>
-            <code>
-              &lt;ul>
-                &lt;li>No order here&lt;/li>
-                &lt;li>Or here&lt;/li>
-                &lt;li>Or here&lt;/li>
-                &lt;li>Or here&lt;/li>
-              &lt;/ul&gt;
-            </code>
-          </pre>
-				</section>
-				
-				<section>
-					  <h2>But wait! We teach code</h2>
-					  <p>We can also make code editable</p>
-					  <pre>
-					    <code contenteditable>
-                &lt;ul>
-                  &lt;li>No order here&lt;/li>
-                  &lt;li>Or here&lt;/li>
-                  &lt;li>Or here&lt;/li>
-                  &lt;li>Or here&lt;/li>
-                &lt;/ul&gt;
-              </code>
-
-            </pre>
-				</section>
-				
-				
-				<section>
-					  <h2>But wait! We teach code</h2>
-					  <p>CSS</p>
-					  <pre>
-              <code contenteditable class ="css">
-                body{
-                  background-color: #ffffff;
-                }
-              </code>
-            </pre>
-				</section>
-				
-				<section>
-					  <h2>But wait! We teach code</h2>
-					  <p>Javascript</p>
-					  <pre>
-              <code contenteditable class ="javascript">
-                function helloWorld(){
-                  var name = 'GDI';
-                  alert("Hi, " + name)
-                }
-              </code>
-            </pre>
-				</section>
-				
-				<section>
-					  <h2>But wait! We teach code</h2>
-					  <p>PHP</p>
-					  <pre>
-              <code contenteditable class ="php">
-                function helloWorld(){
-                  $name = 'GDI';
-                  echo "Hi, " . $name;
-                }
-              </code>
-            </pre>
-				</section>
-				
-				<section>
-					  <h2>But wait! We teach code</h2>
-					  <p>Ruby</p>
-					  <pre>
-              <code contenteditable class ="ruby">
-                def hello_world
-                  @name = 'GDI'
-                  puts "Hi, #{@name}"
-                end
-              </code>
-            </pre>
-				</section>
-               
-         <section>
- 					  <h2>But wait! We teach code</h2>
- 					  <p>Python</p>
- 					  <pre>
-               <code contenteditable class ="python">
-                 def hello_world():
-                   name = "GDI"
-                   print 'Hi, ' + name
-                   return
-               </code>
-             </pre>
- 				</section>
- 				
- 				 <section>
- 					  <h2>But wait! We teach code</h2>
- 					  <p>Java</p>
- 					  <pre>
-               <code contenteditable class ="java">
-                public void helloWorld(){
-                  String name = "GDI";
-                  System.out.println("Hi," + name)
-                }
-               </code>
-             </pre>
- 				</section>
-        
-
-        <!-- Elements entering one at a time-->
         <section>
-					<section>
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
+          <h1>Intermediate WordPress</h1>
+          <h3>Sub-Title Will Go Here</h3>
+          <p>
+            <small>Taught by <a href="https://jamessteinbach.com">James Steinbach</a> / <a href="https://twitter.com/jdsteinbach">@jdsteinbach</a></small>
+          </p>
+        </section>
 
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#/14/1">down</a>.
-						</p>
-						<a href="#/14/1" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-						<a href="#/14/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-  						<a href="#/14" class="image">
-  							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<a href="#/14/3" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-  						<a href="#/14/1" class="image">
-  							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/14" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
+        <section>
+          <section>
+            <h2>Installing WordPress on Your Own Server</h2>
+          </section>
+          <section>
+            <h3>Download the WordPress Zip</h3>
+            <p><a href="https://wordpress.org/download/">wordpress.org/download/</a></p>
+            <p><b>[Local]</b><br/> Unzip and copy files &amp; folders to root of local hosting directory.</p>
+            <p><b>[FTP]</b><br/> Unzip and upload files &amp; folders to root of live hosting directory.</p>
+          </section>
+          <section>
+            <h3>Create a Database User</h3>
+            <p><b>PHPMyAdmin</b></p>
+            <p>http://yourserver.com/phpmyadmin/</p>
+            <p><img src="/images/gdi-wp-add-user.png" alt="Add User in PHPMyAdmin"></p>
+          </section>
+          <section>
+            <h3>Set Up Your Database</h3>
+            <p><img src="/images/gdi-wp-create-db.png" alt="Create User's in PHPMyAdmin"></p>
+          </section>
+          <section>
+            <h3>Set Up Your Database</h3>
+            <p>Things to remember:</p>
+            <ul>
+              <li>user name</li>
+              <li>change host to <code>localhost</code></li>
+              <li>db name (= username)</li>
+              <li>password</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Set Up WordPress</h3>
+            <p>http://yourserver.com/</p>
+            <p><img src="/images/gdi-wp-install.png" alt="Install WordPress"></p>
+          </section>
+          <section>
+            <h3>Set Up WordPress</h3>
+            <p><img src="/images/gdi-wp-install2.png" alt="Install WordPress"></p>
+          </section>
+          <section>
+            <h3>Set Up WordPress</h3>
+            <p><img src="/images/gdi-wp-install3.png" alt="Install WordPress"></p>
+          </section>
+          <section>
+            <h3>Set Up WordPress</h3>
+            <ul>
+              <li><b>Database Name</b> &amp; <b>User Name</b> are the same value &ndash; from PHPMyAdmin.</li>
+              <li><b>Password</b> is the password from PHPMyAdmin.</li>
+              <li><b>Database Host</b> should remain <code>localhost</code>.</li>
+              <li>Change <b>Table Prefix</b> to any other string that ends with an underscore.<br>Example: <code>9ns7_</code></li>
+            </ul>
+          </section>
+          <section>
+            <h3>Set Up WordPress</h3>
+            <p><img src="/images/gdi-wp-install-success.png" alt="Install WordPress"></p>
+          </section>
+          <section>
+            <h3>Set Up WordPress</h3>
+            <p><img src="/images/gdi-wp-welcome.png" alt="Welcome to WordPress"></p>
+          </section>
+          <section>
+            <h3>Set Up WordPress</h3>
+            <ul>
+              <li><b>Site Title</b>: your site title</li>
+              <li><b>Username</b>: literally anything but <code>admin</code>!</li>
+              <li><b>Password</b>: save this</li>
+              <li><b>Your Email</b>: where you want to receive site email notifications</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Set Up WordPress</h3>
+            <p><img src="/images/gdi-wp-success.png" alt="WordPress Success"></p>
+          </section>
+          <section>
+            <h3>Set Up WordPress</h3>
+            <p><img src="/images/gdi-wp-login.png" alt="WordPress Login"></p>
+          </section>
+          <section>
+            <h3>Q/A Break</h3>
+          </section>
+        </section>
 
-        
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview. Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
+        <section>
+          <section>
+            <h2>Installing Custom WP Themes</h2>
+          </section>
+          <section>
+            <h3>Installing Themes in Dashboard</h3>
+            <p>Appearance &rarr; Themes</p>
+            <img src="/images/gdi-wp-themes.png" alt="Installing themes">
+          </section>
+          <section>
+            <h3>Installing Themes from the Repo</h3>
+            <img src="/images/gdi-wp-theme-repo.png" alt="Installing themes from the WP theme repo">
+          </section>
+          <section>
+            <h3>Installing Themes from Elsewhere</h3>
+            <img src="/images/gdi-wp-upload.png" alt="Uploading themes">
+          </section>
+          <section>
+            <h3>Where Do You Get &ldquo;Elsewhere&rdquo; Themes?</h3>
+          </section>
+          <section class="anim-warning">
+            <h2>Trusted Sources</h2>
+          </section>
+          <section>
+            <h3>Trusted Sources</h3>
+            <p>Professional Developers</p>
+            <p>Quality Theme Stores</p>
+            <p>Build Them Yourself!</p>
+          </section>
+          <section>
+            <h3>Untrusted Sources</h3>
+            <p>Base64 Encoding</p>
+            <p>TimThumb Images</p>
+          </section>
+          <section>
+            <h3>&ldquo;Premium&rdquo; Themes</h3>
+            <p class="fragment">Just themes that cost $$</p>
+            <p class="fragment">&ldquo;Premium&rdquo; doesn&apos;t guarantee quality</p>
+          </section>
+          <section>
+            <h3>Testing Themes for Quality</h3>
+            <p class="fragment"><b>Speed</b>: Test the demo page<br><a href="https://developers.google.com/speed/pagespeed/insights/">developers.google.com/speed/ pagespeed/insights/</a></p>
+            <p class="fragment"><b>Security</b>: Run Theme Check plugin<br><a href="https://wordpress.org/plugins/theme-check/">wordpress.org/plugins/theme-check/</a></p>
+            <p class="fragment">Search all theme files for:<br><code>base64</code> | <code>eval</code> | <code>timthumb</code></p>
+          </section>
+          <section>
+            <h3>Q/A Break</h3>
+          </section>
+        </section>
 
-				<section>
-					<h2>rvl.io</h2>
-					<p>
-						You know, we are nerds after all and will probably get a kick out of all of this HTML. BUT, if you really don't like writing slides in HTML you can use the online editor <a href="http://www.rvl.io" target="_blank">rvl.io</a>.
-					</p>
-				</section>
+        <section>
+          <section>
+            <h2>Building a Child Theme</h2>
+          </section>
+          <section>
+            <h3>Why Build a Child Theme?</h3>
+            <p class="fragment">You've got an existing theme,</p>
+            <p class="fragment">that theme gets automatic updates,</p>
+            <p class="fragment">but you need to make modifications</p>
+          </section>
+          <section>
+            <h3>What Is a Child Theme?</h3>
+            <p class="fragment">A small set of custom theme files</p>
+            <p class="fragment">that relies on another theme</p>
+            <p class="fragment">but adds or overrides templates or styles</p>
+          </section>
+          <section>
+            <h3>How Do I Make a Child Theme?</h3>
+            <ol>
+              <li>Install the parent theme you want to modify</li>
+              <li>Create a new theme folder for your child theme</li>
+              <li>Add the necessary files</li>
+            </ol>
+          </section>
+          <section>
+            <h3>Child Theme Necessary Files</h3>
+            <p><code>style.css</code></p>
+            <p><code>functions.php</code></p>
+          </section>
+          <section>
+            <h3>Child Theme: <code>style.css</code></h3>
+            <p>
+              <pre class="css">
+                <code>/*
+ Theme Name:   Twenty Sixteen Child
+ Theme URI:    http://example.com/twenty-sixteen-child/
+ Description:  Twenty Sixteen Child Theme
+ Author:       John Doe
+ Author URI:   http://example.com
+ <span class="bold-code">Template:</span>     <span class="bold-code">twentysixteen</span>
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-sixteen-child
+*/</code></pre></p>
+          </section>
+          <section>
+            <h3>Child Theme: <code>style.css</code></h3>
+            <p><pre><code style="font-size:200%"> <span class="bold-code">Template:</span>     <span class="bold-code">twentysixteen</span>
+</code></pre></p>
+            <p>The &ldquo;Template&rdquo; is the folder name of the parent theme.</p>
+            <p>Start writing your CSS overrides below.</p>
+          </section>
+          <section>
+            <h3>What About the Parent's Styles?</h3>
+            <p>Create your child theme&apos;s <code>functions.php</code></p>
+            <p><pre class="php"><code>&lt;?php
+add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );
 
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
+function enqueue_parent_styles() {
+  wp_enqueue_style( 'parent-style',
+  get_template_directory_uri().'/style.css' );
+}
+?></code></pre></p>
+            <p>Don&apos;t use CSS <code>@import</code>.</p>
+          </section>
+          <section>
+            <h3>Adding Google Web Fonts to a Child Theme</h3>
+            <img src="/images/gdi-wp-google-fonts.png" alt="Choose Google Fonts">
+          </section>
+          <section>
+            <h3>Adding Google Web Fonts to a Child Them</h3>
+            <p>Added to <code>functions.php</code></p>
+            <p><pre class="php"><code>&lt;?php
+add_action( 'wp_enqueue_scripts', 'enqueue_google_fonts' );
 
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-            <a href="?theme=gdicool#/themes">GDI Cool</a> -
-            <a href="?theme=gdilight#/themes">GDI Light</a> -
-            <a href="?theme=gdisunny#/themes">GDI Sunny</a> -
-            <a href="?theme=gdidefault#/themes">Default</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
+function enqueue_google_fonts() {
+  wp_dequeue_style( 'twentyfifteen-fonts-css' );
+  wp_enqueue_style( 'google-fonts',
+  '//fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Merriweather:400,400italic,700,700italic' );
+}
+?></code></pre></p>
+          </section>
+          <section>
+            <h3>Sdding Google Web Fonts to a Child Theme</h3>
+            <p>Add to <code>style.css</code></p>
+            <p><pre><code>body {
+  font-family: Lato;
+}
+h1, h2 {
+  font-family: Merriweather;
+}</code></pre></p>
+          </section>
+          <section>
+            <h3>Override Anything You Like</h3>
+            <p>WordPress has a set way of naming template files for any kind of content a theme or plugin can create.</p>
+            <p>If you use any filenames that match the WP naming convention, you&apos;ll override the parent theme&apos;s files.</p>
+          </section>
+          <section>
+            <h3>Template File Names</h3>
+          </section>
+          <section>
+            <h3>Template File Names</h3>
+            <p>Single Post: "Intermediate WordPress"</p>
+            <p class="fragment"><code>single-post.php</code></p>
+            <p class="fragment"><code>single.php</code></p>
+            <p class="fragment"><code>singular.php</code></p>
+            <p class="fragment"><code>index.php</code></p>
+          </section>
+          <section>
+            <h3>Template File Names</h3>
+            <p>Post Category = /music/</p>
+            <p class="fragment"><code>category-music.php</code></p>
+            <p class="fragment"><code>category.php</code></p>
+            <p class="fragment"><code>archive.php</code></p>
+            <p class="fragment"><code>index.php</code></p>
+          </section>
+          <section>
+            <h3>Template File Names</h3>
+            <p>Single Page: "Contact Me" (id = 38)</p>
+            <p class="fragment"><code>page-contact-me.php</code></p>
+            <p class="fragment"><code>page-38.php</code></p>
+            <p class="fragment"><code>page.php</code></p>
+            <p class="fragment"><code>singular.php</code></p>
+            <p class="fragment"><code>index.php</code></p>
+          </section>
+          <section>
+            <h3>Template File Names</h3>
+            <p>Post Type Archive = /events/</p>
+            <p class="fragment"><code>archive-events.php</code></p>
+            <p class="fragment"><code>archive.php</code></p>
+            <p class="fragment"><code>index.php</code></p>
+          </section>
+          <section>
+            <h3>Template File Names</h3>
+            <p>Post Type Single = /events/</p>
+            <p class="fragment"><code>single-events.php</code></p>
+            <p class="fragment"><code>single.php</code></p>
+            <p class="fragment"><code>singular.php</code></p>
+            <p class="fragment"><code>index.php</code></p>
+          </section>
+          <section>
+            <h3>Template File Names</h3>
+            <p><a href="https://developer.wordpress.org/themes/basics/template-hierarchy/">WP Template Hierarchy</a></p>
+            <img src="//developer.wordpress.org/files/2014/10/template-hierarchy.png" alt="Template Hierarchy">
+          </section>
+          <section>
+            <h3>Q/A Break</h3>
+          </section>
+        </section>
 
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code contenteditable style="font-size: 18px; margin-top: 20px;">Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
+        <section>
+          <h2>Break&hellip;</h2>
+          <img src="//i.giphy.com/lXiRq3Iltq8zVmL7i.gif" alt="Kit Kat Break">
+        </section>
 
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						The nice thing about standards is that there are so many to choose from</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.
-					</blockquote>
-				</section>
+        <section>
+          <section>
+            <h2>Installing Plugins</h2>
+          </section>
+          <section>
+            <h3>Installing from WP</h3>
+            <img src="/images/gdi-wp-plugins.png" alt="WP Plugin Install">
+          </section>
+          <section>
+            <h3>Installing from 3rd Party Developers</h3>
+            <img class="anim-warning" src="/images/gdi-trusted-sources.png" alt="Trusted Sources">
+          </section>
+          <section>
+            <h3>Finding Trusted 3rd Party Plugins</h3>
+            <p>Recommendations from experienced developers</p>
+            <p>Open source code</p>
+            <p>Other contributions to WP Plugin Repo</p>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Useful WordPress Plugins</h2>
+            <ul>
+              <li>Security</li>
+              <li>Speed</li>
+              <li>SEO</li>
+            </ul>
+          </section>
 
+          <section>
+            <h2>Security</h2>
+          </section>
+          <section>
+            <h3>WordFence Security</h3>
+            <p><img src="/images/gdi-wp-wordfence.png" alt="WordFence Security Plugin"></p>
+          </section>
+          <section>
+            <h3>WordFence Security</h3>
+            <p>Best security with the least set-up work</p>
+            <p>Scan site for vulnerabilities / compromises</p>
+            <p><a href="https://wordpress.org/plugins/wordfence/">WordFence Security Plugin</a></p>
+          </section>
+          <section>
+            <h3>iThemes Security</h3>
+            <p><img src="/images/gdi-wp-ithemes-security.png" alt="iThemes Security"></p>
+          </section>
+          <section>
+            <h3>iThemes Security</h3>
+            <p>A lot more work up front, but more configurable</p>
+            <p>Plays nicer with certain other plugins</p>
+            <p><a href="">iThemes Security</a></p>
+          </section>
+          <section>
+            <h3>BackWPUp Free</h3>
+            <p><img src="/images/gdi-wp-backwpup.png" alt="BackWPUp Plugin"></p>
+          </section>
+          <section>
+            <h3>BackWPUp Free</h3>
+            <p>Schedule backups of your database & files</p>
+            <p>Store backups on Dropbox, Google Drive, or Amazon S3</p>
+            <p>Pro Version: $75</p>
+            <p><a href="https://wordpress.org/plugins/backwpup/">BackWPUp Plugin</a> | <a href="https://marketpress.com/product/backwpup-pro/">BackWPUp Pro</a></p>
+          </section>
+          <section>
+            <h3>WP Remote</h3>
+            <p><img src="/images/gdi-wp-remote.png" alt="WP Remote"></p>
+          </section>
+          <section>
+            <h3>WP Remote</h3>
+            <p>Update all your WP sites from 1 dashboard</p>
+            <p><a href="https://wpremote.com/">WP Remote</a></p>
+          </section>
 
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/1">like this</a>.
-					</p>
-				</section>
+          <section>
+            <h2>Speed</h2>
+          </section>
+          <section>
+            <h3>W3 Total Cache</h3>
+            <p><img src="/images/gdi-wp-w3-total-cache.png" alt="W3 Total Cache Plugin"></p>
+          </section>
+          <section>
+            <h3>W3 Total Cache</h3>
+            <p>Create cached copies of all your site pages</p>
+            <p>Minify and concatenate your scripts & styles</p>
+            <p><a href="https://wordpress.org/plugins/w3-total-cache/">W3 Total Cache Plugin</a></p>
+          </section>
+          <section>
+            <h3>WP Super Cache</h3>
+            <p><img src="/images/gdi-wp-w3-total-cache.png" alt="WP Super Cache"></p>
+          </section>
+          <section>
+            <h3>WP Super Cache</h3>
+            <p>Less complex than W3 Total Cache</p>
+            <p>Just caching, not minifying / concatenating</p>
+            <p>Maintained by Automattic</p>
+            <p><a href="https://wordpress.org/plugins/wp-super-cache/">WP Super Cache</a></p>
+          </section>
+          <section>
+            <h3>EWWW Image Optimizer</h3>
+            <p><img src="/images/gdi-wp-ewww.png" alt="EWWW Image Optimizer"></p>
+          </section>
+          <section>
+            <h3>EWWW Image Optimizer</h3>
+            <p>Works in the background to compress all images upoaded to the site</p>
+            <p>Bulk optimizes existing images</p>
+            <p><a href="https://wordpress.org/plugins/ewww-image-optimizer/">EWWW Image Optimizer</a></p>
+          </section>
 
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
-					</p>
-				</section>
+          <section>
+            <h2>SEO</h2>
+          </section>
+          <section>
+            <h3>Yoast SEO</h3>
+            <p><img src="/images/gdi-wp-yoast.png" alt="Yoast SEO Plugin"></p>
+          </section>
+          <section>
+            <h3>Yoast SEO</h3>
+            <p>Customize post / page titles and meta for search engines</p>
+            <p>Scan content for target search terms</p>
+            <p><img src="/images/gdi-wp-yoast-edit.png" alt="Yoast SEO Edit"></p>
+            <p><a href="https://wordpress.org/plugins/wordpress-seo/">Yoast SEO Plugin</a></p>
+          </section>
+          <section>
+            <h3>Google Analytics by Yoast</h3>
+            <p><img src="/images/gdi-wp-analytics.png" alt="Google Analytics"></p>
+          </section>
+          <section>
+            <h3>Google Analytics by Yoast</h3>
+            <p>Authenticate through Google, or paste your tracking number</p>
+            <p>Automatically adds GA code to all posts/pages</p>
+            <p><a href="https://wordpress.org/plugins/google-analytics-for-wordpress/">Google Analytics by Yoast</a></p>
+          </section>
 
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Girl Develop It</h3>
-					<h4>Special thanks to: Hakim El Hattab / hakim.se</h4>
-				</section>
+          <section>
+            <h3>Q/A Break</h3>
+          </section>
 
-			</div>
-  		<footer>
+          <section>
+            <h2>Helpful WordPress Plugins</h2>
+            <p>Forms</p>
+            <p>Custom Content</p>
+            <p>Styles</p>
+            <p>Sales</p>
+          </section>
+
+          <section>
+            <h2>Forms</h2>
+          </section>
+          <section>
+            <h3>Formidable Forms</h3>
+            <p><img src="/images/gdi-wp-formidable.png" alt="Formidable Forms Plugin"></p>
+          </section>
+          <section>
+            <h3>Formidable Forms</h3>
+            <p>Advanced drag & drop form creator</p>
+            <p>Customizable email routing for submissions</p>
+            <p>Bulk export entries</p>
+            <p>Pro Version: $70</p>
+            <p><a href="https://wordpress.org/plugins/formidable/">Formidable Forms Plugin</a> | <a href="https://formidablepro.com/pricing/">Formidable Pro</a></p>
+          </section>
+          <section>
+            <h3>Other Forms</h3>
+            <h4>Gravity Forms</h4>
+            <p>Similar features to Formidable Pro, cost $40</p>
+            <p><a href="http://www.gravityforms.com/">Gravity Forms</a></p>
+            <h4>Contact Form 7</h4>
+            <p>Super &ldquo;simple,&rdquo; but not accessible at all</p>
+          </section>
+
+          <section>
+            <h2>Custom Content</h2>
+          </section>
+          <section>
+            <h3>Types (and Views)</h3>
+            <p><img src="/images/gdi-wp-types.png" alt="Types"></p>
+          </section>
+          <section>
+            <h3>Types</h3>
+            <p>Create custom post types and taxonomies</p>
+            <p>Create custom fields for post types and taxonomies</p>
+            <p><a href="https://wordpress.org/plugins/types/">Types</a></p>
+          </section>
+          <section>
+            <h3>Views</h3>
+            <p>Separate, paid upgrade from same developers</p>
+            <p>Create custom template pages without writing PHP</p>
+            <p>Part of a $150 plugin package</p>
+            <p><a href="https://wp-types.com/buy/">Views</a></p>
+          </section>
+          <section>
+            <h3>Advanced Custom Fields</h3>
+            <p><img src="/images/gdi-wp-acf.png" alt="Advanced Custom Fields"></p>
+          </section>
+          <section>
+            <h3>Advanced Custom Fields</h3>
+            <p>Create custom field groups and attach them to any piece of content</p>
+            <p>Requires PHP knowledge to build custom templates</p>
+            <p>Pro Version: $25</p>
+            <p><a href="">Advanced Custom Fields</a> | <a href="http://www.advancedcustomfields.com/pro/">ACF Pro</a></p>
+          </section>
+
+          <section>
+            <h2>Styles</h2>
+          </section>
+          <section>
+            <h3>Captain Typekit</h3>
+            <p><img src="/images/gdi-wp-captain-typekit.png" alt="Captain Typekit"></p>
+          </section>
+          <section>
+            <h3>Captain Typekit</h3>
+            <p>Paste a Typekit kit ID</p>
+            <p>It automatically adds the Typekit JS to your site</p>
+            <p><a href="https://wordpress.org/plugins/captain-typekit/">Captain Typekit</a></p>
+          </section>
+          <section>
+            <h3>Google Web Font Customizer</h3>
+            <p><img src="/images/gdi-wp-gwfc.png" alt="Google Web Font Customizer"></p>
+          </section>
+          <section>
+            <h3>Google Web Font Customizer</h3>
+            <p>Don&apos;t pick too many fonts!</p>
+            <p><a href="https://wordpress.org/plugins/google-web-fonts-customizer-gwfc/">Google Web Font Customizer</a></p>
+          </section>
+
+          <section>
+            <h2>Sales</h2>
+          </section>
+          <section>
+            <h3>WooCommerce</h3>
+            <p><img src="/images/gdi-wp-woocommerce.png" alt="WooCommerce"></p>
+          </section>
+          <section>
+            <h3>WooCommerce</h3>
+            <p>Custom online store management</p>
+            <p>Display and sell products (physical or digital)</p>
+            <p>Basic store functionality is free, but many paid upgrades</p>
+            <p><a href="https://www.woothemes.com/woocommerce/">WooCommerce</a></p>
+          </section>
+        </section>
+
+        <section>
+          <h2>Thanks!</h2>
+          <h3>James Steinbach</h3>
+          <p><a href="https://jdsteinbach.com">jdsteinbach.com</a></p>
+          <p><a href="https://twitter.com/jdsteinbach">@jdsteinbach</a></p>
+          <p><a href="https://github.com/jdsteinbach">GH: jdsteinbach</a></p>
+        </section>
+
+      </div>
+      <footer>
         <div class="copyright">
-          Official class name here -- Chapter name here (if content modified from original) --
+          Intermediate WordPress &ndash; GDI Boulder/Denver &ndash;
           <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
         </div>
       </footer>
-		</div>
+    </div>
 
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
 
-		<script>
+    <script>
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        width: 1200,
+        height: (1200 / 4 * 3),
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
 
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
 
-		</script>
+    </script>
 
-	</body>
+  </body>
 </html>
