@@ -215,15 +215,13 @@
           </section>
           <section>
             <h3>Child Theme: <code>style.css</code></h3>
-            <p>
-              <pre class="css">
-                <code>/*
+            <p><pre><code class="css">/*
  Theme Name:   Twenty Sixteen Child
  Theme URI:    http://example.com/twenty-sixteen-child/
  Description:  Twenty Sixteen Child Theme
  Author:       John Doe
  Author URI:   http://example.com
- <span class="bold-code">Template:</span>     <span class="bold-code">twentysixteen</span>
+ Template:     twentysixteen
  Version:      1.0.0
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
@@ -233,7 +231,7 @@
           </section>
           <section>
             <h3>Child Theme: <code>style.css</code></h3>
-            <p><pre><code style="font-size:200%"> <span class="bold-code">Template:</span>     <span class="bold-code">twentysixteen</span>
+            <p><pre><code style="font-size:200%" class="css">Template:     twentysixteen
 </code></pre></p>
             <p>The &ldquo;Template&rdquo; is the folder name of the parent theme.</p>
             <p>Start writing your CSS overrides below.</p>
@@ -241,7 +239,7 @@
           <section>
             <h3>What About the Parent's Styles?</h3>
             <p>Create your child theme&apos;s <code>functions.php</code></p>
-            <p><pre class="php"><code>&lt;?php
+            <p><pre><code class="php">&lt;?php
 add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );
 
 function enqueue_parent_styles() {
@@ -258,7 +256,7 @@ function enqueue_parent_styles() {
           <section>
             <h3>Adding Google Web Fonts to a Child Them</h3>
             <p>Added to <code>functions.php</code></p>
-            <p><pre class="php"><code>&lt;?php
+            <p><pre><code class="php">&lt;?php
 add_action( 'wp_enqueue_scripts', 'enqueue_google_fonts' );
 
 function enqueue_google_fonts() {
@@ -271,7 +269,7 @@ function enqueue_google_fonts() {
           <section>
             <h3>Sdding Google Web Fonts to a Child Theme</h3>
             <p>Add to <code>style.css</code></p>
-            <p><pre><code>body {
+            <p><pre><code class="css">body {
   font-family: Lato;
 }
 h1, h2 {
@@ -288,7 +286,7 @@ h1, h2 {
           </section>
           <section>
             <h3>Template File Names</h3>
-            <p>Single Post: "Intermediate WordPress"</p>
+            <p>Single Post: &ldquo;Intermediate WordPress&rdquo;</p>
             <p class="fragment"><code>single-post.php</code></p>
             <p class="fragment"><code>single.php</code></p>
             <p class="fragment"><code>singular.php</code></p>
@@ -304,7 +302,7 @@ h1, h2 {
           </section>
           <section>
             <h3>Template File Names</h3>
-            <p>Single Page: "Contact Me" (id = 38)</p>
+            <p>Single Page: &ldquo;Contact Me&rdquo; (id = 38)</p>
             <p class="fragment"><code>page-contact-me.php</code></p>
             <p class="fragment"><code>page-38.php</code></p>
             <p class="fragment"><code>page.php</code></p>
@@ -328,17 +326,17 @@ h1, h2 {
           </section>
           <section>
             <h3>Template File Names</h3>
+            <p><img src="//developer.wordpress.org/files/2014/10/template-hierarchy.png" alt="Template Hierarchy"></p>
             <p><a href="https://developer.wordpress.org/themes/basics/template-hierarchy/">WP Template Hierarchy</a></p>
-            <img src="//developer.wordpress.org/files/2014/10/template-hierarchy.png" alt="Template Hierarchy">
           </section>
           <section>
             <h3>Q/A Break</h3>
           </section>
         </section>
 
-        <section>
-          <h2>Break&hellip;</h2>
-          <img src="//i.giphy.com/lXiRq3Iltq8zVmL7i.gif" alt="Kit Kat Break">
+        <section data-background="//i.giphy.com/lXiRq3Iltq8zVmL7i.gif">
+          <h1 style="color:#fff;">Break&hellip;</h1>
+          <!-- <img src="//i.giphy.com/lXiRq3Iltq8zVmL7i.gif" alt="Kit Kat Break"> -->
         </section>
 
         <section>
